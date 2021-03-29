@@ -1,79 +1,34 @@
-```
+# 프록시
 
-You can [generate](https://github.com/rundocs/starter-slim/generate) with the same files and folders from [rundocs/starter-slim](https://github.com/rundocs/starter-slim/)
+![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=develop)
+![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)
 
-## Usage
+대리자역할을 하는 프록시를 통하여, 실제 서브젝트를 사용하는 방법.
+클라이언트는 대리자를 통하여 실제 서브젝트를 사용한다.
 
-Documentation that can guide how to create with Github pages, please refer to [rundocs.io](https://rundocs.io) for details
+사용처 : 로깅,트랜잭션처리,AOP
 
-## Features
+로깅등의 내용을 처리를 리얼서브젝트 쪽으로 처리한다면, 코드가 굉장히 더러워지고, 객체지향적이라 할 수 없음.
 
-- Shortcodes (Toasts card, mermaid)
-- Pages Plugins (emoji, gist, avatar, mentions)
-- Auto generate sidebar
-- [Attribute List Definitions](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions) (Primer/css utilities, Font Awesome 4)
-- Service worker (caches)
-- SEO (404, robots.txt, sitemap.xml)
-- Canonical Link (Open Graph, Twitter Card, Schema data)
 
-## Options
 
-| name          | default value        | description       |
-| ------------- | -------------------- | ----------------- |
-| `title`       | repo name            |                   |
-| `description` | repo description     |                   |
-| `url`         | user domain or cname |                   |
-| `baseurl`     | repo name            |                   |
-| `lang`        | `en`                 |                   |
-| `direction`   | `auto`               | `ltr` or `rtl`    |
-| `highlighter` | `rouge`              | Cannot be changed |
+[comment]: <> (## What it does?)
 
-```yml
-# folders sort
-readme_index:
-  with_frontmatter: true
+자연스레 잘해갈꺼라는 믿음은 버려. 노력하지 않는자 도태 될 뿐.
 
-meta:
-  key1: value1
-  key2: value2
-  .
-  .
-  .
+[comment]: <> (This theme is inspired by [sphinx-rtd-theme]&#40;https://github.com/readthedocs/sphinx_rtd_theme&#41; and refactored with:)
 
-google:
-  gtag:
-  adsense:
+[comment]: <> (- [@primer/css]&#40;https://github.com/primer/css&#41;)
 
-mathjax: # this will prased to json, default: {}
+[comment]: <> (- [github-pages]&#40;https://github.com/github/pages-gem&#41; &#40;[dependency versions]&#40;https://pages.github.com/versions/&#41;&#41;)
 
-mermaid:
-  custom:     # mermaid link
-  initialize: # this will prased to json, default: {}
+[comment]: <> (## Quick start)
 
-scss:   # also _includes/extra/styles.scss
-script: # also _includes/extra/script.js
+[comment]: <> (```yml)
 
-translate:
-translate:
-  # shortcodes
-  danger:
-  note:
-  tip:
-  warning:
-  # 404
-  not_found:
-  # copyright
-  revision:
-  # search
-  searching:
-  search:
-  search_docs:
-  search_results:
-  search_results_found: # the "#" in this translate will replaced with results size!
-  search_results_not_found:
+[comment]: <> (remote_theme: rundocs/jekyll-rtd-theme)
 
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
-```
+
+## The license
+
+The theme is available as open source under the terms of the MIT License
